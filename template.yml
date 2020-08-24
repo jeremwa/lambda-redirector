@@ -4,15 +4,6 @@ Transform: AWS::Serverless-2016-10-31
 Globals:
   Api:
     OpenApiVersion: '3.0.2'
-Parameters:
-  HTTPResponse:
-    Type: Number
-    Default: 302
-    AllowedValues: [301, 302]
-    Description: "The HTTP response status code."
-  NewDomain:
-    Type: String
-    Description: "New domain to redirect to."
 Resources:
   GetFunction:
     Type: AWS::Serverless::Function
